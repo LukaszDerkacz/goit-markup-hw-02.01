@@ -1,2 +1,1 @@
-# goit-markup-hw-02
-Course: GOIT PL, Full-Stack Developer, Homework #2
+# [goit-markup-hw-01](https://lukaszderkacz.github.io/goit-markup-hw-01/)
