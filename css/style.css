@@ -1,56 +1,80 @@
 :root {
-    --font-weight-normal: 400;
-    --font-weight-bold: 600;
-    --font-weight-extra-bold: 700;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 700;
 
-    --font-size-14px: 14px;
-    --font-size-36px: 36px;
-
-    --primary-color: #212121;
-    --second-color: #757575;
-    --accent-color: #2196F3;
-    --dark-color: #2f303a;
-    --light-color: #F5F4FA;
-    --white-color: #ffffff;
-    
-    --font-family-primary: 'Roboto', sans-serif;
-    --font-family-raleway: 'Raleway', sans-serif;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  --primary-color: #212121;
+  --second-color: #757575;
+  --accent-color: #2196F3;
+  --dark-color: #2f303a;
+  --light-color: #F5F4FA;
+  --white-color: #ffffff;
+  
+  --main-font: font-family: 'Roboto', sans-serif;
+  --secondary-font: font-family: 'Raleway', sans-serif;
+}
   
 body {
-    color: var(--primary-color);
-    font-family: var(--font-family-primary);
+    font-family: var(--main-font);
   }
 
-h2 {
-    font-size: var(--font-size-36px);
+/* h2 {
+    font-size: 36px;
     font-weight: var(--font-weight-bold);
+  } */
+
+ a{
+  text-decoration: none;
+  } 
+  
+/* .font-accent {
+    color: var(--accent-color);
+  } */
+
+/* =========== COMPONENT =========== */
+
+  .logo {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
   }
 
-a{
-  text-decoration: none;
-  }
-  
-.font-accent {
+  .logo-accent {
     color: var(--accent-color);
   }
- 
-  /* =========== header =========== */
 
-  .header-logo {
-    color: var(--primary-color);
-    font-family: var(--font-family-raleway);
-    font-weight: var(--font-weight-bold);
+/* =========== END COMPONENT =========== */
+
+/* =========== HEADER =========== */
+
+  .navigation-list-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
   }
- 
+
+  .navigation-list-link:hover,
+  .navigation-list-link:focus,
+  .address-mail:hover,
+  .address-mail:focus,
+  .address-phone:hover,
+  .address-phone:focus {
+    color: var(--accent-color);
+  }
+
+  .address {
+    font-style: normal;
+  }
+
+  .navigation-list-link-active {
+    color: var(--accent-color)
+  }
+
+
+/*  
   .header-link-nav {
     color: var(--primary-color);
     transition: color 150ms ease-in-out;
@@ -67,7 +91,7 @@ a{
 
   .header-contact-link {
     color: var(--second-color);
-    font-size: var(--font-size-14px);
+    font-size: 14px;
     font-weight: var(--font-weight-normal);
     transition: color 150ms ease-in-out;
   }
@@ -75,20 +99,22 @@ a{
   .header-contact-link:hover,
   .header-contact-link:focus {
     color: var(--accent-color);
-  }
+  } */
 
- /* =========== main =========== */
+/* =========== END HEADER =========== */
 
-.main-title {
+/* =========== HERO =========== */
+
+.hero {
   background: var(--dark-color);
 }
 
-.main-title-content h1 {
+.hero-content h1 {
   color: var(--white-color);
   font-weight: var(--font-weight-extra-bold);
 }
 
-.main-title-button {
+.hero-button {
   color: var(--white-color);
   background-color: var(--accent-color);
   font-weight: var(--font-weight-bold);
@@ -96,17 +122,18 @@ a{
   border: 0;
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
 }
 
+ /* =========== END HERO =========== */
+
 .table-description-content-item h3 {
-  font-size: var(--font-size-14px);
+  font-size: 14px;
   font-weight: var(--font-weight-bold);
 }
 
 .table-description-content-item p {
   color: var(--second-color);
-  font-size: var(--font-size-14px);
+  font-size: 14px;
   font-weight: var(--font-weight-normal);
 }
   
@@ -114,7 +141,6 @@ a{
   color: var(--primary-color);
   font-weight: var(--font-weight-normal);
   background-color: var(--light-color);
-  cursor: pointer;
 }
 
 .portfolio-filtr-content-item--button:hover,
@@ -149,7 +175,7 @@ a{
   
   .content-item-link h4 {
     color: var(--primary-color);
-    font-family: var(--font-family-primary);
+    font-family: var(--main-font);
     text-align: center
   }
   
@@ -158,7 +184,7 @@ a{
     text-align: center
   } 
   
-  /* =========== footer =========== */
+/* =========== FOOTER =========== */
 
   .footer-body {
     background-color: var(--dark-color);
@@ -166,7 +192,7 @@ a{
 
   .footer-body-logo {
     color: var(--white-color);
-    font-family: var(--font-family-raleway);
+    font-family: var(--secondary-font);
     font-weight: var(--font-weight-bold);
   }
  
@@ -185,3 +211,5 @@ a{
   .footer-body-contact-link a:focus {
     color: var(--accent-color);
   }
+
+/* =========== END FOOTER =========== */
